@@ -29,8 +29,8 @@ public class Main {
             throw new IllegalArgumentException("Array is null or empty");
         }
 
-        for(int i=0; i<values.length; i++){
-            wynik+=values[i];
+        for (int val : values) {
+            wynik += val;
         }
         return  wynik / values.length;
 
