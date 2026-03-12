@@ -14,8 +14,7 @@ public class Main {
 
         }
         for (int i = 0; i < x.length; i++) {
-            double wzor = Math.pow(x[i] - y[i], 2);
-            wynik = wynik + wzor;
+            wynik += Math.pow(x[i] - y[i], 2);
         }
 
         return Math.sqrt(wynik);
