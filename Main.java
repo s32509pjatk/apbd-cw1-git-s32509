@@ -25,6 +25,10 @@ public class Main {
 
         double wynik=0;
 
+        if (values == null || values.length == 0) {
+            throw new IllegalArgumentException("Array is null or empty");
+        }
+
         for(int i=0; i<values.length; i++){
             wynik+=values[i];
         }
