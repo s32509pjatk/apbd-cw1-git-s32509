@@ -1,9 +1,14 @@
 public class Main {
+
     public static double odlegloscXY(double[] x, double[] y){
         double wynik = 0;
         if (x == null || y == null) {
             throw new IllegalArgumentException("punkty sa nullami");
         }
+        if (x.length == 0) {
+            return 0;
+        }
+
         if (x.length != y.length) {
             throw new IllegalArgumentException("punkty nie maja tych samych wymiarów");
 
