@@ -19,4 +19,17 @@ public class Main {
 
         return Math.sqrt(wynik);
     }
+
+
+    public double calculateAverage(int[] values){
+
+        double wynik=0;
+
+        for(int i=0; i<values.length; i++){
+            wynik+=values[i];
+        }
+        return  wynik / values.length;
+
+    }
+
 }
