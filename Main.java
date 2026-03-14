@@ -35,5 +35,19 @@ public class Main {
         return  wynik / values.length;
 
     }
+    public int calculateMax(int[] values){
+        if (values == null || values.length == 0) {
+            throw new IllegalArgumentException("Array is null or empty");
+        }
+
+        int maxValue=values[0];
+        for(int val : values){
+            if(maxValue<val)
+                maxValue=val;
+
+        }
+        return maxValue
+    }
+
 
 }
