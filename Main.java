@@ -55,9 +55,9 @@ public class Main {
             throw new IllegalArgumentException("Array is null or empty");
         }
         int minValue = values[0];
-        for (int val : values) {
-            if (val < minValue) {
-                minValue = val;
+        for (int intVal : values) {
+            if (intVal < minValue) {
+                minValue = intVal;
             }
         }
         return minValue;
