@@ -51,6 +51,9 @@ public class Main {
 
     public int calculateMin(int[] values) {
 
+        if (values == null || values.length == 0) {
+            throw new IllegalArgumentException("Array is null or empty");
+        }
         int minValue = values[0];
         for (int val : values) {
             if (val < minValue) {
