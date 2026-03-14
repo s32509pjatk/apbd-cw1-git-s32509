@@ -49,5 +49,8 @@ public class Main {
         return maxValue
     }
 
+    public int calculateMin(int[] values) {
+        return 0;
+    }
 
 }
