@@ -56,9 +56,8 @@ public class Main {
         }
         int minValue = values[0];
         for (int val : values) {
-            if (val < minValue) {
-                minValue = val;
-            }
+            minValue = Math.min(minValue, val);
+
         }
         return minValue;
     }
