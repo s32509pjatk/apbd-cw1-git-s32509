@@ -50,7 +50,14 @@ public class Main {
     }
 
     public int calculateMin(int[] values) {
-        return 0;
+
+        int minValue = values[0];
+        for (int val : values) {
+            if (val < minValue) {
+                minValue = val;
+            }
+        }
+        return minValue;
     }
 
 }
