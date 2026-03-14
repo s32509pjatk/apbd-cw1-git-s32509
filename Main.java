@@ -55,6 +55,7 @@ public class Main {
             throw new IllegalArgumentException("Array is null or empty");
         }
         int minValue = values[0];
+
         for (int val : values) {
             minValue = Math.min(minValue, val);
 
